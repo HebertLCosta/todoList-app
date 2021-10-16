@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import TodoContext from "../contexts/TodoContext";
 import Navbar from "./Navbar";
 import TodoList from "./TodoList";
@@ -8,7 +8,7 @@ import AddTodo from './AddTodo';
 const App = () => {
   return (
     <TodoContext>
-      <Router>
+      <BrowserRouter>
         <Navbar></Navbar>
         <br />
         <div className="uk-container">
@@ -22,7 +22,7 @@ const App = () => {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </BrowserRouter>
     </TodoContext>
   );
 };
