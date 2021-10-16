@@ -39,7 +39,7 @@ const AddTodo = () => {
         />
         <span>
           <small>
-            <strong className="uk-text-danger">{errors.title?.message}</strong>
+            <strong className="uk-alert-danger">{errors.title?.message}</strong>
           </small>
         </span>
       </div>
